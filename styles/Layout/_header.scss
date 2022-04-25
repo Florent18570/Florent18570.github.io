@@ -1,0 +1,26 @@
+header {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  padding: 1rem;
+
+  div {
+    position: relative;
+    .header__logo {
+      font-family: Shrikhand, "cursive";
+      margin: auto;
+      text-align: center;
+      width: 100%;
+    }
+    i {
+      position: absolute;
+      left: 2rem;
+      height: 2rem;
+      width: 2rem;
+      top: 50%;
+
+      transform: translateY(-50%);
+      font-size: 2rem;
+      color: #000;
+    }
+  }
+}

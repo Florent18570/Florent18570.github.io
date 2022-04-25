@@ -1,0 +1,39 @@
+footer {
+  padding: 30px 9%;
+  color: white;
+  background-color: #353535;
+  & ul {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    .footer__logo {
+      color: #fff;
+      font-family: Shrikhand, "cursive";
+      font-size: 1.2rem;
+      margin: 0 0 1rem;
+    }
+  }
+  & div {
+    padding-bottom: 3px;
+  }
+}
+.bloc-footer {
+  display: flex;
+  align-items: center;
+  .fas {
+    margin-right: 14px;
+  }
+}
+
+.footer__link {
+  color: #fff;
+  text-decoration: none;
+  margin: 3px;
+}
+
+.footer__link:hover {
+  color: #fff;
+  text-decoration: underline;
+  margin: 3px;
+}
