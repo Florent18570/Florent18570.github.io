@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
+
+* {
+  font-family: Roboto, sans-serif;
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+  color: #0e0e0e;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.title {
+  width: 90%;
+  font-size: 26px;
+  margin-left: 31px;
+  font-family: Shrikhand, "cursive";
+}
