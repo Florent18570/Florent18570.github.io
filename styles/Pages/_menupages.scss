@@ -27,10 +27,16 @@
   padding-top: 20px;
   width: 100%;
   align-items: center;
+
   i {
     position: absolute;
     font-size: 2rem;
     right: 3rem;
+  }
+  @media screen and (max-width: 424px) {
+    i {
+      right: 1rem;
+    }
   }
 
   @include btc-heart;

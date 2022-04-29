@@ -22,6 +22,13 @@ body {
   font-family: Shrikhand, "cursive";
 }
 
+@media screen and (max-width: 424px) {
+  .title {
+    font-size: 24px;
+    margin: 0px;
+  }
+}
+
 header {
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
           box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
@@ -787,6 +794,12 @@ main .loader::after {
   position: absolute;
   font-size: 2rem;
   right: 3rem;
+}
+
+@media screen and (max-width: 424px) {
+  .header-card i {
+    right: 1rem;
+  }
 }
 
 .header-card .fas {
