@@ -1,0 +1,233 @@
+//////////////////////////////
+// Section city
+//////////////////////////////
+
+.city {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3f3f3;
+
+  & p {
+    font-size: 1000;
+    font-weight: bold;
+    margin-left: 25px;
+  }
+}
+
+//////////////////////////////
+// Section reservation
+//////////////////////////////
+
+.reservation {
+  text-align: center;
+  background-color: #fafafa;
+  padding-bottom: 22px;
+  padding-top: 10px;
+  & h1 {
+    margin-top: 0px;
+  }
+  & p {
+    font-size: 16px;
+  }
+  & .btc {
+    position: relative;
+    z-index: 10;
+    background-color: #686868;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 40px;
+    color: white;
+    cursor: pointer;
+    background-image: linear-gradient(
+      0deg,
+      rgba(147, 86, 220, 0.9),
+      rgba(255, 121, 218, 0.9)
+    );
+    transition-duration: 400ms;
+    border: none;
+  }
+  & .btc:hover {
+    opacity: 0.8;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+}
+
+//////////////////////////////
+// Section fonctionnement
+//////////////////////////////
+
+.fonctionnement {
+  & h1 {
+    padding: 10px 0 0px 12%;
+  }
+  .bloc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    transition: box-shadow 300ms ease;
+    &__hover {
+      position: relative;
+      cursor: pointer;
+      padding: 10px 30px 10px 24px;
+      display: flex;
+      align-items: center;
+      border-radius: 23px;
+      background-color: #f6f6f6;
+      box-shadow: 0.1rem 0.1rem 0.5rem;
+      width: 22%;
+      margin-bottom: 14px;
+    }
+    .bloc__hover:hover {
+      box-shadow: 0.4rem 0.4rem 1rem;
+    }
+
+    & p {
+      margin: 25px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+    .purple-bull {
+      background: #9356dc;
+      width: 20px;
+      border-radius: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      position: relative;
+      left: -35px;
+      border: #686868 2px solid;
+    }
+  }
+
+  @media screen and (max-width: 1023px) {
+    .bloc {
+      flex-direction: column;
+      width: 100%;
+    }
+    & h1 {
+      margin-left: 0px;
+      margin-bottom: 30px;
+    }
+    & .bloc div {
+      min-width: 91%;
+      padding: 0px;
+      margin: 0 0 0 15px;
+      & .purple-bull {
+        left: -11px;
+      }
+    }
+  }
+}
+
+//////////////////////////////
+// Section Restaurant
+//////////////////////////////
+
+@mixin card($card, $column_start, $rows_start) {
+  & .card#{$card} {
+    grid-column: $column_start;
+    grid-row: $rows_start;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 0 0 1rem 1rem;
+    margin: 0.5rem 1rem;
+    img {
+      width: 100%;
+      height: 15rem;
+      object-fit: cover;
+      border-radius: 1rem 1rem 0 0;
+    }
+    & .bloc-image {
+      display: inline-block;
+      position: relative;
+      width: 100%;
+      img {
+        width: 100%;
+        height: 15rem;
+        object-fit: cover;
+        border-radius: 1rem 1rem 0 0;
+      }
+      & h4 {
+        background-color: #99e2d0;
+        color: #1b6150;
+        right: 5px;
+        padding: 10px;
+        position: absolute;
+      }
+    }
+  }
+}
+
+.restaurant {
+  background-color: #f6f6f6;
+
+  & h1 {
+    padding: 50px 0 0px 12%;
+  }
+}
+
+.bloc-restaurant {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding: 2% 11%;
+  border-radius: 1rem 1rem 0 0;
+  gap: 30px;
+
+  @include card(1, 1, 1);
+  @include card(2, 2, 1);
+  @include card(3, 1, 2);
+  @include card(4, 2, 2);
+}
+
+@media screen and (max-width: 1023px) {
+  .bloc-restaurant {
+    margin: 0;
+    width: 100%;
+    padding: 0 0 30px 0;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    @include card(1, 1, 1);
+    @include card(2, 1, 2);
+    @include card(3, 1, 3);
+    @include card(4, 1, 4);
+  }
+
+  .restaurant h1 {
+    padding: 50px 0 16px 22px;
+  }
+}
+
+.card {
+  &__content {
+    white-space: nowrap;
+    width: 85%;
+    padding-left: 20px;
+    &_title {
+      margin-bottom: 10px;
+    }
+    p {
+      margin-top: 0px;
+    }
+  }
+  &__footer {
+    display: flex;
+    align-items: center;
+    position: relative;
+    i {
+      font-size: 2rem;
+      position: absolute;
+      right: 1rem;
+    }
+    @include btc-heart;
+  }
+}
+
+
+// loader
+@import "../Layout/_animation.scss";
+@include loader;

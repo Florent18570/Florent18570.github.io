@@ -6,10 +6,10 @@ header {
   div {
     position: relative;
     .header__logo {
-      font-family: Shrikhand, "cursive";
-      margin: auto;
-      text-align: center;
-      width: 100%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 30%;
     }
     i {
       position: absolute;

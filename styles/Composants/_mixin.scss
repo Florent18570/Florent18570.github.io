@@ -1,0 +1,15 @@
+// Bouton + heart animation
+@mixin btc-heart {
+  .fas {
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(red, blue);
+    opacity: 0;
+    transition: all 500ms ease-in-out;
+  }
+  .fas:hover {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}

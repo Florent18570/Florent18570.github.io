@@ -1,52 +1,39 @@
-<?php include("header.html"); 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles/normalize.css" rel="stylesheet" />
+    <link href="styles/main.css" rel="stylesheet" />
 
-$title = "À la française";
+    <title>Ohmygood</title>
+    <script
+      src="https://kit.fontawesome.com/21ad114602.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-$entree1 = "Tartare de poulpe acidulé";
-$entree1_p = "Aux zestes d'orange";
-$entree1_prix = "25€";
-
-$entree2 = "Velouté de légumes d'antan";
-$entree2_p = "Carotte, panais, topinambour";
-$entree2_prix = "35€";
-
-$entree3 = "Soupe à l'oignon";
-$entree3_p = "Revisitée";
-$entree3_prix = "20€";
-
-$Plats1 = "Coquilles Saint-Jacques";
-$Plats1_p = "Accompagnées d'une purée de panais";
-$Plats1_prix = "40€";
-
-$Plats2 = "Magret de canard";
-$Plats2_p = "Et parmentier de pommes de terre";
-$Plats2_prix = "35€";
-
-$Plats3 = "Pigeonneau d’Ille-et-Vilaine";
-$Plats3_p = "Sur son lit de gnocchis aux légumes";
-$Plats3_prix = "44€";
-
-$Desserts1 = "Pétales de violettes glacés";
-$Desserts1_p = "Et purée de noisettes";
-$Desserts1_prix = "18€";
-
-$Desserts2 = "Fondant au chocolat";
-$Desserts2_p = "Revisité";
-$Desserts2_prix = "22€";
-
-$Desserts3 = "Millefeuille croustillant";
-$Desserts3_p = "Myrtilles et pâte d’amande";
-$Desserts3_prix = "23€";
-?>
+  <body>
+    
+    <header>
+        <a href="index.html">
+            <div> 
+                <i class="fa-arrow-left fas" aria-hidden="true"></i>
+                <img class="header__logo" src="images/logo/ohmyfood.png">
+            </div>
+        </a>
+    </header>
+  
 
 
 
 
-<img class="main-img"src="/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="restaurant">
+<img class="main-img"src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="restaurant">
 
 <main class="container">
     <div class="header-card">
-        <p class="title"> <?php echo $title ?>  </p>
+        <p class="title"> À la française   </p>
         <i class="card__like fa-2x fa-heart far menu__like menu__like--bg" aria-hidden="true"></i>
         <i class="card__like fa-2x fa-heart fas menu__like menu__like--bg" aria-hidden="true"></i>
     </div>
@@ -59,10 +46,10 @@ $Desserts3_prix = "23€";
 
         <div class="bloc-menu delay1">
             <section class="header-menu">
-                <h4 class="title_menu"> <?php echo $entree1 ?></h4>
-                <p class="description"> <?php echo $entree1_p ?></p>
+                <h4 class="title_menu"> Tartare de poulpe acidulé</h4>
+                <p class="description"> Aux zestes d'orange </p>
             </section>
-            <p class="price"> <?php echo $entree1_prix ?> </p>
+            <p class="price"> 25€  </p>
             <div class="menu-check">
                 <i class="fa-check fas menuItem__icon" aria-hidden="true"></i>
             </div>
@@ -70,10 +57,10 @@ $Desserts3_prix = "23€";
 
         <div class="bloc-menu delay2">
             <section class="header-menu">
-                <h4 class="title_menu"> <?php echo $entree2 ?></h4>
-                <p class="description"> <?php echo $entree2_p ?></p>
+                <h4 class="title_menu"> Velouté de légumes d'antan </h4>
+                <p class="description"> Carotte, panais, topinambour </p>
             </section>
-            <p class="price"> <?php echo $entree2_prix ?> </p>
+            <p class="price"> 35€  </p>
             <div class="menu-check">
                 <i class="fa-check fas menuItem__icon" aria-hidden="true"></i>
             </div>
@@ -81,10 +68,10 @@ $Desserts3_prix = "23€";
 
         <div class="bloc-menu delay3">
             <section class="header-menu">
-                <h4 class="title_menu"> <?php echo $entree3 ?></h4>
-                <p class="description"> <?php echo $entree3_p ?></p>
+                <h4 class="title_menu"> Soupe à l'oignon </h4>
+                <p class="description"> Revisitée </p>
             </section>
-            <p class="price"> <?php echo $entree3_prix ?> </p>
+            <p class="price"> 20€  </p>
             <div class="menu-check">
                 <i class="fa-check fas menuItem__icon" aria-hidden="true"></i>
             </div>
@@ -93,10 +80,10 @@ $Desserts3_prix = "23€";
         <h3  class="submenu__title">Plats</h3>
         <div class="bloc-menu delay4">
             <section class="header-menu">
-                <h4 class="title_menu"> <?php echo $Plats1 ?></h4>
-                <p class="description"> <?php echo $Plats1_p ?></p>
+                <h4 class="title_menu"> Coquilles Saint-Jacques </h4>
+                <p class="description"> Accompagnées d'une purée de panais</p>
             </section>
-            <p class="price"> <?php echo $Plats1_prix ?> </p>
+            <p class="price"> 40€  </p>
             <div class="menu-check">
                 <i class="fa-check fas menuItem__icon" aria-hidden="true"></i>
             </div>
@@ -104,10 +91,10 @@ $Desserts3_prix = "23€";
 
         <div class="bloc-menu delay5">
             <section class="header-menu">
-                <h4 class="title_menu"> <?php echo $Plats2 ?></h4>
-                <p class="description"> <?php echo $Plats2_p ?></p>
+                <h4 class="title_menu"> Magret de canard </h4>
+                <p class="description"> Et parmentier de pommes de terre</p>
             </section>
-            <p class="price"> <?php echo $Plats2_prix ?> </p>
+            <p class="price"> 35€ </p>
             <div class="menu-check">
                 <i class="fa-check fas menuItem__icon" aria-hidden="true"></i>
             </div>
@@ -115,10 +102,10 @@ $Desserts3_prix = "23€";
 
         <div class="bloc-menu delay6">
             <section class="header-menu">
-                <h4 class="title_menu"> <?php echo $Plats3 ?></h4>
-                <p class="description"> <?php echo $Plats3_p ?></p>
+                <h4 class="title_menu"> Noix de coquilles Saint-Jacques </h4>
+                <p class="description"> Sur son lit de gnocchis aux légumes </p>
             </section>
-            <p class="price"> <?php echo $Plats3_prix ?> </p>
+            <p class="price"> 44€  </p>
             <div class="menu-check">
                 <i class="fa-check fas menuItem__icon" aria-hidden="true"></i>
             </div>
@@ -128,10 +115,10 @@ $Desserts3_prix = "23€";
         <h3 class="submenu__title">Desserts</h3>
         <div class="bloc-menu delay7">
             <section class="header-menu">
-                <h4 class="title_menu"> <?php echo $Desserts1 ?></h4>
-                <p class="description"> <?php echo $Desserts1_p ?></p>
+                <h4 class="title_menu"> Pétales de violettes glacés </h4>
+                <p class="description"> Et purée de noisettes </p>
             </section>
-            <p class="price"> <?php echo $Desserts1_prix ?> </p>
+            <p class="price"> 18€  </p>
             <div class="menu-check">
                 <i class="fa-check fas menuItem__icon" aria-hidden="true"></i>
             </div>
@@ -139,10 +126,10 @@ $Desserts3_prix = "23€";
 
         <div class="bloc-menu delay8">
             <section class="header-menu">
-                <h4 class="title_menu"> <?php echo $Desserts2 ?></h4>
-                <p class="description"> <?php echo $Desserts2_p ?></p>
+                <h4 class="title_menu"> Fondant au chocolat </h4>
+                <p class="description"> Revisité </p>
             </section>
-            <p class="price"> <?php echo $Desserts2_prix ?> </p>
+            <p class="price"> 22€  </p>
             <div class="menu-check">
                 <i class="fa-check fas menuItem__icon" aria-hidden="true"></i>
             </div>
@@ -150,10 +137,10 @@ $Desserts3_prix = "23€";
 
         <div class="bloc-menu delay9">
             <section class="header-menu">
-                <h4 class="title_menu"> <?php echo $Desserts3 ?></h4>
-                <p class="description"> <?php echo $Desserts3_p ?></p>
+                <h4 class="title_menu"> Millefeuille croustillant </h4>
+                <p class="description"> Myrtilles et pâte d’amande </p>
             </section>
-            <p class="price"> <?php echo $Desserts3_prix ?> </p>
+            <p class="price"> 23€  </p>
             <div class="menu-check">
                 <i class="fa-check fas menuItem__icon" aria-hidden="true"></i>
             </div>
@@ -165,4 +152,33 @@ $Desserts3_prix = "23€";
     
 </main> 
 
-<?php include("footer.html"); 
+<footer>
+    <ul>
+      <div class="footer__logo">ohmyfood</div>
+      <div class="bloc-footer">
+        <i class="fa-utensils fas footer__icon" aria-hidden="true"></i>
+        <li>
+          <a href="#"><p class="footer__link">Proposer un restaurant</p></a>
+        </li>
+      </div>
+      <div class="bloc-footer">
+        <i class="fa-hands-helping fas footer__icon" aria-hidden="true"></i>
+        <li>
+          <a href="#"> <p class="footer__link">Devenir partenaire</p> </a>
+        </li>
+      </div>
+      <div>
+        <li>
+          <a href="#"><p class="footer__link">Mention légales</p> </a>
+        </li>
+      </div>
+      <div>
+        <li>
+          <a class="footer__link" href="mailto:contact@ohmyfood.com">Contact</a>
+        </li>
+      </div>
+    </ul>
+  </footer>
+  </body>
+  </html>
+  
