@@ -72,7 +72,6 @@ header div i {
 }
 
 .city p {
-  font-size: 1000;
   font-weight: bold;
   margin-left: 25px;
 }
@@ -725,8 +724,7 @@ main .loader::after {
     z-index: 999999;
   }
   100% {
-    background-color: default;
-    z-index: -1;
+    z-index: 0;
   }
 }
 
@@ -741,8 +739,7 @@ main .loader::after {
     z-index: 999999;
   }
   100% {
-    background-color: default;
-    z-index: -1;
+    z-index: 0;
   }
 }
 
