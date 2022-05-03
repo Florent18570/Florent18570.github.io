@@ -1,28 +1,29 @@
+.footer__logo {
+  color: #fff;
+  font-family: Shrikhand, "cursive";
+  font-size: 1.2rem;
+  margin: 0 37px 1rem;
+}
+
 footer {
   padding: 30px 9%;
   color: white;
   background-color: #353535;
-
-  .footer__logo {
-    color: #fff;
-    font-family: Shrikhand, "cursive";
-    font-size: 1.2rem;
-    margin: 0 37px 1rem;
-  }
-  & ul {
+  ul {
     color: white;
     display: flex;
     flex-direction: column;
-    list-style-type: none;
     li {
       display: flex;
+      a {
+        cursor: pointer;
+      }
     }
   }
 }
 
 .footer__link {
   color: #fff;
-  text-decoration: none;
   margin: 3px;
 }
 

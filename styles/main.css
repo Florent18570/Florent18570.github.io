@@ -55,7 +55,7 @@ header div i {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   font-size: 2rem;
-  color: #0000;
+  color: #000;
 }
 
 .city {
@@ -607,8 +607,6 @@ main .loader-container {
   -webkit-animation: fadeinbody 2s linear;
           animation: fadeinbody 2s linear;
   background-color: transparent;
-  width: 100%;
-  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -715,30 +713,42 @@ main .loader::after {
 
 @-webkit-keyframes fadeinbody {
   0% {
+    width: 100%;
+    height: 100%;
     background-color: rgba(147, 86, 220, 0.99);
     z-index: 999999;
     opacity: 1;
   }
   80% {
+    width: 100%;
+    height: 100%;
     background-color: rgba(255, 121, 218, 0.99);
     z-index: 999999;
   }
   100% {
+    width: 100%;
+    height: 100%;
     z-index: 0;
   }
 }
 
 @keyframes fadeinbody {
   0% {
+    width: 100%;
+    height: 100%;
     background-color: rgba(147, 86, 220, 0.99);
     z-index: 999999;
     opacity: 1;
   }
   80% {
+    width: 100%;
+    height: 100%;
     background-color: rgba(255, 121, 218, 0.99);
     z-index: 999999;
   }
   100% {
+    width: 100%;
+    height: 100%;
     z-index: 0;
   }
 }
@@ -1131,17 +1141,17 @@ main .loader::after {
   }
 }
 
-footer {
-  padding: 30px 9%;
-  color: white;
-  background-color: #353535;
-}
-
-footer .footer__logo {
+.footer__logo {
   color: #fff;
   font-family: Shrikhand, "cursive";
   font-size: 1.2rem;
   margin: 0 37px 1rem;
+}
+
+footer {
+  padding: 30px 9%;
+  color: white;
+  background-color: #353535;
 }
 
 footer ul {
@@ -1153,7 +1163,6 @@ footer ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  list-style-type: none;
 }
 
 footer ul li {
@@ -1162,9 +1171,12 @@ footer ul li {
   display: flex;
 }
 
+footer ul li a {
+  cursor: pointer;
+}
+
 .footer__link {
   color: #fff;
-  text-decoration: none;
   margin: 3px;
 }
 
