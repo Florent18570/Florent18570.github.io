@@ -1097,7 +1097,7 @@ main .loader::after {
 
 @media screen and (max-width: 1023px) {
   .container {
-    padding: 19px;
+    padding: 16px;
   }
   .menu {
     display: -ms-grid;
@@ -1140,6 +1140,13 @@ footer {
   background-color: #353535;
 }
 
+footer .footer__logo {
+  color: #fff;
+  font-family: Shrikhand, "cursive";
+  font-size: 1.2rem;
+  margin: 0 37px 1rem;
+}
+
 footer ul {
   color: white;
   display: -webkit-box;
@@ -1152,28 +1159,10 @@ footer ul {
   list-style-type: none;
 }
 
-footer ul .footer__logo {
-  color: #fff;
-  font-family: Shrikhand, "cursive";
-  font-size: 1.2rem;
-  margin: 0 0 1rem;
-}
-
-footer div {
-  padding-bottom: 3px;
-}
-
-.bloc-footer {
+footer ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.bloc-footer .fas {
-  margin-right: 14px;
 }
 
 .footer__link {

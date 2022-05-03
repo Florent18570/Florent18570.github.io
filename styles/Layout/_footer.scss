@@ -2,27 +2,21 @@ footer {
   padding: 30px 9%;
   color: white;
   background-color: #353535;
+
+  .footer__logo {
+    color: #fff;
+    font-family: Shrikhand, "cursive";
+    font-size: 1.2rem;
+    margin: 0 37px 1rem;
+  }
   & ul {
     color: white;
     display: flex;
     flex-direction: column;
     list-style-type: none;
-    .footer__logo {
-      color: #fff;
-      font-family: Shrikhand, "cursive";
-      font-size: 1.2rem;
-      margin: 0 0 1rem;
+    li {
+      display: flex;
     }
-  }
-  & div {
-    padding-bottom: 3px;
-  }
-}
-.bloc-footer {
-  display: flex;
-  align-items: center;
-  .fas {
-    margin-right: 14px;
   }
 }
 

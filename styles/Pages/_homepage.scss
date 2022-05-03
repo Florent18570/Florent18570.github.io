@@ -227,7 +227,6 @@
   }
 }
 
-
 // loader
-@import "../Layout/_animation.scss";
+@import "../Composants/animation";
 @include loader;
