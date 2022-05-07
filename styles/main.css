@@ -153,8 +153,11 @@ header div i {
 }
 
 .fonctionnement .bloc .bloc__hover:hover {
-  -webkit-box-shadow: 0.4rem 0.4rem 1rem;
-          box-shadow: 0.4rem 0.4rem 1rem;
+  background-color: #ece1f9;
+}
+
+.fonctionnement .bloc .bloc__hover:hover .fas {
+  color: #9356dc;
 }
 
 .fonctionnement .bloc p {
@@ -979,7 +982,7 @@ main .loader::after {
 .bloc-menu .header-menu .description {
   padding-left: 17px;
   margin: 0;
-  font-size: 14px;
+  font-size: 12px;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;

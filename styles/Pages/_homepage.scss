@@ -79,7 +79,11 @@
       margin-bottom: 14px;
     }
     .bloc__hover:hover {
-      box-shadow: 0.4rem 0.4rem 1rem;
+      $color-primary: #9356dc;
+      background-color: lighten($color-primary, 33%);
+      .fas {
+        color: $color-primary;
+      }
     }
 
     & p {
